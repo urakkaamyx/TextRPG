@@ -5,6 +5,7 @@
   "description": "A source-grounded, persistent text RPG inspired by the TextBaseRPG system guide.",
   "type": "module",
   "scripts": {
+    "build": "node --check server.js && node --check src/domain.js && node --check src/storage.js && node --check public/app.js",
     "start": "node server.js",
     "dev": "node --watch server.js",
     "test": "node --test"
